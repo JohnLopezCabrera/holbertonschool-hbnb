@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, abort
 from flask_restx import Api, Resource, fields
 import sys
-sys.path.append('/home/johnlopez90/hbnh_2/airbnb_project')
+sys.path.append('/home/johnlopez90/holbertonschool-hbnb')
 from models.user import User
 import datetime
 app = Flask(__name__)
