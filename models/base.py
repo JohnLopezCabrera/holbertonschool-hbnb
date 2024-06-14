@@ -1,36 +1,31 @@
-# models/base.py
-import uuid
 from datetime import datetime
 
 class BaseModel:
-    """
-    Base class for all models, providing common attributes and methods.
-    """
     def __init__(self):
-        self.id = str(uuid.uuid4())
-        self.created_at = datetime.utcnow()
-        self.updated_at = self.created_at
+        self.id = None
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
 
     def save(self):
-        """
-        Simulate saving the object to a database.
-        """
-        self.updated_at = datetime.utcnow()
-        # Implement actual database save logic here.
+        self.updated_at = datetime.now()
 
-    def delete(self):
-        """
-        Simulate deleting the object from a database.
-        """
-        # Implement actual database delete logic here.
+# models/user.py
+from models.base import BaseModel
 
-    def to_dict(self):
-        """
-        Convert the object to a dictionary.
-        """
-        return {
-            'id': self.id,
-            'created_at': self.created_at.isoformat() + 'Z',
-            'updated_at': self.updated_at.isoformat() + 'Z',
-        }
+class User(BaseModel):
+    def __init__(self, email, first_name, last_name):
+        super().__init__()
+        self.email = email
+        self.first_name = first_name
+        self.last_name = last_name
 
+# models/review.py
+from models.base import BaseModel
+
+class Review(BaseModel):
+    def __init__(self, rating, text, user, place):
+        super().__init__()
+        self.rating = rating
+        self.text = text
+        self.user = user
+        self.place = place
