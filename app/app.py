@@ -3,8 +3,7 @@ from flask_restx import Api
 
 def create_app():
     app = Flask(__name__)
-    api = Api(app, title='AirBnB SuperClone', version='3.3', description='The Best API in the World')
-    # api = Api(app, title='AirBnB SuperClone', version='3.3', description='The Best API in the World', doc=False)
+    api = Api(app, title='HolbertonBNB', version='3.3', description='Student project for Holberton')
 
     # Configuration settings might be loaded here
     app.config.from_pyfile('config.py')
