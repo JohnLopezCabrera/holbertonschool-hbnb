@@ -7,11 +7,6 @@ Welcome to the Holberton Airbnb Clone project! This project is part of the curri
 - [Description](#description)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Authors](#authors)
-- [Acknowledgements](#acknowledgements)
 
 ## Description
 
@@ -34,53 +29,7 @@ To get a local copy up and running, follow these simple steps.
 - Python 3.x
 - pip (Python package installer)
 - virtualenv
-
-### Installation Steps
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/holberton-airbnb-clone.git
-   cd holberton-airbnb-clone
-Create a virtual environment
-
-bash
-Copy code
-python3 -m venv venv
-source venv/bin/activate
-Install the required dependencies
-
-bash
-Copy code
-pip install -r requirements.txt
-Set up the database
-
-bash
-Copy code
-# Update the configuration file with your database credentials
-python manage.py migrate
-Run the application
-
-bash
-Copy code
-python manage.py runserver
-Usage
-Access the application at http://127.0.0.1:8000.
-Create an account or log in with existing credentials.
-Browse or search for properties.
-Manage your listings through the user dashboard.
-Book properties and leave reviews.
-Contributing
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-License
-Distributed under the MIT License. See LICENSE for more information.
-
-Authors
+-Docker
 Your Name - YourGitHubUsername
 Collaborator Name - CollaboratorGitHubUsername
 Acknowledgements
